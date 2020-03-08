@@ -1,0 +1,26 @@
+# hexo robots.txt
+
+User-agent: *
+
+Allow: /
+
+Allow: /archives/
+
+
+
+Disallow: /vendors/
+
+Disallow: /js/
+
+Disallow: /css/
+
+Disallow: /fonts/
+
+Disallow: /vendors/
+
+Disallow: /fancybox/
+
+
+
+Sitemap: https://unlcedemon.online/sitemap.xml
+Sitemap: https://unlcedemon.online/baidusitemap.xml
