@@ -96,7 +96,7 @@
     root: '/',
     scheme: 'Muse',
     version: '7.0.0',
-    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -890,14 +890,14 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install wxpython</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://img-blog.csdnimg.cn/20181209211300216.png" alt="在这里插入图片描述"><br>wxpython现在有两个版本：2.0+与3.0+,wxpython2.0是针对python2,而wxpython 3.0+是针对python3。而以上命令是安装wxpython最新版的。</p>
-<h3 id="2、安装wxFormBuilder"><a href="#2、安装wxFormBuilder" class="headerlink" title="2、安装wxFormBuilder"></a>2、安装wxFormBuilder</h3><p>下载地址：<a href="https://github.com/wxFormBuilder/wxFormBuilder/releases" target="_blank" rel="noopener">https://github.com/wxFormBuilder/wxFormBuilder/releases</a><br>下载最新版本的就行了。<br>wxFormBuilder的使用教程可以参考这个博客：<a href="http://blog.51cto.com/yuyongid/1717514" target="_blank" rel="noopener">http://blog.51cto.com/yuyongid/1717514</a></p>
+<h3 id="2、安装wxFormBuilder"><a href="#2、安装wxFormBuilder" class="headerlink" title="2、安装wxFormBuilder"></a>2、安装wxFormBuilder</h3><p>下载地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3d4Rm9ybUJ1aWxkZXIvd3hGb3JtQnVpbGRlci9yZWxlYXNlcw==" title="https://github.com/wxFormBuilder/wxFormBuilder/releases">https://github.com/wxFormBuilder/wxFormBuilder/releases<i class="fa fa-external-link"></i></span><br>下载最新版本的就行了。<br>wxFormBuilder的使用教程可以参考这个博客：<span class="exturl" data-url="aHR0cDovL2Jsb2cuNTFjdG8uY29tL3l1eW9uZ2lkLzE3MTc1MTQ=" title="http://blog.51cto.com/yuyongid/1717514">http://blog.51cto.com/yuyongid/1717514<i class="fa fa-external-link"></i></span></p>
 <h2 id="2、开始制作窗体界面"><a href="#2、开始制作窗体界面" class="headerlink" title="2、开始制作窗体界面"></a>2、开始制作窗体界面</h2><p>我写的界面很简单，有兴趣的可以写更美观的界面<br><img src="https://img-blog.csdnimg.cn/20181209212435862.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>注意要给输入框以及button设置名字，然后给button绑定两个事件。<br><img src="https://img-blog.csdnimg.cn/20181209212614385.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20181209212628159.png" alt="在这里插入图片描述"><br>然后建立第二个界面：<br><img src="https://img-blog.csdnimg.cn/20181209212715591.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>注意的是我在图中表明的地方<br><img src="https://img-blog.csdnimg.cn/20181209212803496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>这个是用的textcrtl,然后按照图片中的内容进行设置。</p>
 <p>然后生成代码：<br><img src="https://img-blog.csdnimg.cn/20181209213147535.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>图中1的地方选择我们写的聊天程序的python代码的路径，2要明文件的名字，3选择生成哪种语言的代码。<br><strong>记得设置名字</strong></p>
 <p><img src="https://img-blog.csdnimg.cn/20181209214147564.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>这3个地方要设置名字。<br><strong>记得添加事件</strong><br><img src="https://img-blog.csdnimg.cn/20181209213623157.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>这个一定要设置成OnTextEnter事件，不然就没有输入完成按enter键发送信息的功能。<br>然后给发送按钮添加一个发送点击事件。<br>所有的界面设置完成后，然后按F8生成代码。</p>
-<h2 id="3、使用python代码完善功能"><a href="#3、使用python代码完善功能" class="headerlink" title="3、使用python代码完善功能"></a>3、使用python代码完善功能</h2><p>我使用的是eclipse编写的python代码， 如果想要和我一样使用eclipse编写python代码的，具体实现步骤请百度。<br>进入eclipse后，先按F5刷新一下，然后就能得到在wxFormBuilder生成的代码<br><img src="https://img-blog.csdnimg.cn/20181209215145624.png" alt="在这里插入图片描述"><br>然后我们新建一个TcpClient的module,然后建立两个类去继承我们在wxFormBuilder生成的代码中的类。<br><img src="https://img-blog.csdnimg.cn/20181209215850462.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20181209215904579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后根据python的类的继承，把父类的方法实例化。<br>我可能说的不清楚，大家可以参考这个博客：<a href="https://blog.csdn.net/Thanours/article/details/83789047" target="_blank" rel="noopener">https://blog.csdn.net/Thanours/article/details/83789047</a><br>关于python的socket的编程，有不懂的可以查看廖雪峰的官方网站中的python部分进行学习。<br>我认为说一大堆废话，不如看着一个具体的代码进行研究学习。<br>代码我上传在我的github上，有需要的可以下载研究，大家共同研究进步。</p>
-<p>github地址：<a href="https://github.com/Budexing/Python-/tree/master/wxpython" target="_blank" rel="noopener">https://github.com/Budexing/Python-/tree/master/wxpython</a><br>码字不易，请大家多多点赞，谢谢！！！</p>
+<h2 id="3、使用python代码完善功能"><a href="#3、使用python代码完善功能" class="headerlink" title="3、使用python代码完善功能"></a>3、使用python代码完善功能</h2><p>我使用的是eclipse编写的python代码， 如果想要和我一样使用eclipse编写python代码的，具体实现步骤请百度。<br>进入eclipse后，先按F5刷新一下，然后就能得到在wxFormBuilder生成的代码<br><img src="https://img-blog.csdnimg.cn/20181209215145624.png" alt="在这里插入图片描述"><br>然后我们新建一个TcpClient的module,然后建立两个类去继承我们在wxFormBuilder生成的代码中的类。<br><img src="https://img-blog.csdnimg.cn/20181209215850462.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20181209215904579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dhbmczMzc1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后根据python的类的继承，把父类的方法实例化。<br>我可能说的不清楚，大家可以参考这个博客：<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RoYW5vdXJzL2FydGljbGUvZGV0YWlscy84Mzc4OTA0Nw==" title="https://blog.csdn.net/Thanours/article/details/83789047">https://blog.csdn.net/Thanours/article/details/83789047<i class="fa fa-external-link"></i></span><br>关于python的socket的编程，有不懂的可以查看廖雪峰的官方网站中的python部分进行学习。<br>我认为说一大堆废话，不如看着一个具体的代码进行研究学习。<br>代码我上传在我的github上，有需要的可以下载研究，大家共同研究进步。</p>
+<p>github地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0J1ZGV4aW5nL1B5dGhvbi0vdHJlZS9tYXN0ZXIvd3hweXRob24=" title="https://github.com/Budexing/Python-/tree/master/wxpython">https://github.com/Budexing/Python-/tree/master/wxpython<i class="fa fa-external-link"></i></span><br>码字不易，请大家多多点赞，谢谢！！！</p>
 
       
     </div>
@@ -915,6 +915,29 @@
     
     
 
+    
+      <div>
+        
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>王尉铭</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://unlcedemon.online/20190309/wxpython-makes-a-chat-form-program-based-on-tcp-protocol.html" title="WXpython做基于TCP协议的聊天窗体程序">http://unlcedemon.online/20190309/wxpython-makes-a-chat-form-program-based-on-tcp-protocol.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -1065,7 +1088,7 @@
                   
                     
                   
-                  <a href="https://github.com/Budexing" title="GitHub &rarr; https://github.com/Budexing" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0J1ZGV4aW5n" title="GitHub &rarr; https://github.com/Budexing"><i class="fa fa-fw fa-github"></i>GitHub</span>
                 </span>
               
                 <span class="links-of-author-item">
@@ -1076,7 +1099,7 @@
                   
                     
                   
-                  <a href="mailto:1129963779@qq.com" title="E-Mail &rarr; mailto:1129963779@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <span class="exturl" data-url="bWFpbHRvOjExMjk5NjM3NzlAcXEuY29t" title="E-Mail &rarr; mailto:1129963779@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</span>
                 </span>
               
                 <span class="links-of-author-item">
@@ -1087,12 +1110,21 @@
                   
                     
                   
-                  <a href="https://weibo.com/u/5411778269" title="Weibo &rarr; https://weibo.com/u/5411778269" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20vdS81NDExNzc4MjY5" title="Weibo &rarr; https://weibo.com/u/5411778269"><i class="fa fa-fw fa-weibo"></i>Weibo</span>
                 </span>
               
             </div>
           
 
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+             </div>
           
 
           
@@ -1125,6 +1157,13 @@
       <!--/noindex-->
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
    
     </div>
@@ -1234,13 +1273,6 @@ show_date_time();
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-          <span id="scrollpercent"><span>0</span>%</span>
-        
-      </div>
     
      
 	 
@@ -1784,10 +1816,89 @@ show_date_time();
   
 
   
+  <script src="/js/src/exturl.js?v=7.0.0"></script>
+
 
   
 
   
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('复制');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
