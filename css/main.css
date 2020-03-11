@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8b6304;
+  background: #5b9006;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2791,20 +2791,24 @@ embed {
   font-family: "Microsoft YaHei";
   font-size: 10px;
 }
-.back-to-top {
-  width: 70px;
-  height: 900px;
-  top: -900px;
-  bottom: unset;
-  transition: all 0.5s ease-in-out;
-  background: url("/images/scroll.png");
+.post-body>p:first-child::first-letter {
+  float: left;
+/* height: 32px;*/
+  margin-top: 14px;
+  margin-right: 6px;
+  color: #555;
+  font-size: 42px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
 }
-.back-to-top > i {
-  display: none;
-}
-.back-to-top.back-to-top-on {
-  bottom: unset;
-  top: calc(100vh - 900px - 200px);
+@media (max-width: 767px) {
+  .post-body>p:first-child::first-letter {
+    margin-top: 10px;
+    margin-right: 4px;
+    font-size: 26px;
+    line-height: 20px;
+  }
 }
 .highlight {
   position: static;
