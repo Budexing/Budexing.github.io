@@ -1967,7 +1967,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #65e25c;
+  background: #b4b34d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2756,6 +2756,20 @@ embed {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.hitokoto-title {
+  text-align: center;
+  font-size: 12px;
+}
+#hitokoto {
+  text-align: left;
+  font-family: "Microsoft YaHei";
+  font-size: 11px;
+}
+#hitofrom {
+  float: right;
+  font-family: "Microsoft YaHei";
+  font-size: 10px;
 }
 .back-to-top {
   width: 70px;
