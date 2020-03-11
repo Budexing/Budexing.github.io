@@ -1108,7 +1108,7 @@ pre .javascript .function {
 }
 .back-to-top {
   visibility: hidden;
-  margin: 8px -10px -20px;
+  margin: 5px -10px -20px;
   background: #222;
   font-size: 12px;
   opacity: 1;
@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4f2fff;
+  background: #ffcb13;
 }
 .links-of-blogroll {
   font-size: 13px;
