@@ -934,7 +934,21 @@
   
     <div class="comments" id="comments">
     </div>
-
+    <script>    
+	 window.onload = function(){    
+	 var valine = new Valine();         
+	 valine.init({   
+	 el: '#vcomments',    
+	 appId: "<%= theme.v_appId %>",    
+	 appKey: "<%= theme.v_appKey %>",    
+	 path: window.location.pathname,    
+	 placeholder: "你是我一生只会遇见一次的惊喜 ...",   
+	 avatar:'wavatar', //用不同面孔和背景组合生成的头像   
+	 notify: true, // 邮件提醒!!!    
+	 verify: true, // 验证码      })  
+	 }
+	 </script>
+	 
   
 
 
@@ -1381,11 +1395,11 @@ show_date_time();
   });
   new Valine({
     el: '#comments',
-    verify: false,
+    verify: true,
     notify: true,
     appId: 'N0dYf1lfG7PwfKB7kfw7evdJ-gzGzoHsz',
     appKey: '2MPzj0FtEvb2KTBFfXH4xtCD',
-    placeholder: 'Just go go',
+    placeholder: '快来说点什么',
     avatar: 'mm',
     meta: guest,
     pageSize: '10' || 10,
